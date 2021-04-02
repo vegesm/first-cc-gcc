@@ -1,4 +1,4 @@
-# legacy-cc_gcc
+# first-cc-gcc
 A port of the [earliest C compiler](https://www.bell-labs.com/usr/dmr/www/primevalC.html) to modern GCC. The compiler outputs PDP-11 assembly code that can be compiled and run on a PDP-11 emulator. The compiler runs only in 32 bit mode as the original code assumes that the pointer size and word size are the same.
 
 ## Usage
