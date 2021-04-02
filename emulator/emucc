@@ -1,0 +1,6 @@
+#!/bin/bash
+
+echo as -u $1 | emulator/emucat
+NAME=`basename $1 .s`
+echo mv a.out $NAME.o | emulator/emucat
+echo ld /usr/lib/crt0.o $NAME.o -lc -l | emulator/emucat

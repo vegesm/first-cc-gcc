@@ -1,0 +1,11 @@
+#!/bin/bash
+
+echo rm $2 | emulator/emucat
+echo ed $2 | emulator/emucat
+echo a | emulator/emucat
+# slow down transfer to prevent dropping characters
+cat $1 | (lines=0; while read line; do echo $line; if [ $((++lines % 5)) -eq 0 ]; then sleep 1; fi; done) | emulator/emucat
+echo | emulator/emucat
+echo . | emulator/emucat
+echo w | emulator/emucat
+echo q | emulator/emucat

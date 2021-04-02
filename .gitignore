@@ -1,0 +1,5 @@
+.idea
+*.tmp
+docs
+*.exe
+src/*_fixed.s

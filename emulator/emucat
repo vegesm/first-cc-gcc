@@ -1,0 +1,2 @@
+#!/bin/bash
+ncat localhost 5556
