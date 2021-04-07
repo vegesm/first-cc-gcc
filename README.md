@@ -43,7 +43,7 @@ there are tons of missing features:
 - even though there is a keyword for `float` and `double`, floating point calculations are not implemented, you can not even write a floating point literal
 - the type system is very weak: pointers, chars, ints can be freely converted into one another
 - types of the function parameters are not checked, anything can be passed to any function
-- compound assignment operators are reversed, they are =+, =*
+- compound assignment operators are reversed, they are `=+`, `=*`
 - only integer global variables can be defined, and the syntax is strange (see helloworld example)
 - variable names can be of any length but only the first 8 characters are used; i.e. deadbeef1 and deadbeef2 are effectively the same variables
   
